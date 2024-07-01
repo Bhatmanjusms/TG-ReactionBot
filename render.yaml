@@ -5,7 +5,7 @@ services:
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python -m bot
-    repo: git@github.com:saikatwtf/TG-ReactionBot.git
+    repo: https://github.com/saikatwtf/TG-ReactionBot
     branch: main
     autoDeploy: false
     envVars:
