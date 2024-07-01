@@ -1,0 +1,21 @@
+services:
+  - type: web
+    plan: free
+    name: Auto-Reaction
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m bot
+    repo: git@github.com:saikatwtf/TG-ReactionBot.git
+    branch: main
+    autoDeploy: false
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: BOT_USERNAME
+        sync: false
+      - key: EMOJIS
+        sync: false
